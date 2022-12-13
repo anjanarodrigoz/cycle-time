@@ -6,10 +6,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: Align(
+          alignment: Alignment.center,
           child: Column(
-        children: [Image.asset('assets/insee.png')],
-      )),
+            children: [Image.asset('assets/insee.png')],
+          )),
     );
   }
 }
