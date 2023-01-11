@@ -1,5 +1,6 @@
 import 'package:cycle_time/pages/home_page.dart';
 import 'package:cycle_time/utils/app_theme.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class SplashPage extends StatelessWidget {
                 color: AppColor.red,
                 fontWeight: FontWeight.w600,
                 fontSize: 30.0),
-          )
+          ),
         ],
       ),
     );
