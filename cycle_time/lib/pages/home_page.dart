@@ -1,5 +1,6 @@
 import 'package:cycle_time/utils/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,11 +50,11 @@ class _HomePageState extends State<HomePage> {
           children: [
             const Text(
               '2022/12/15',
-              style: TextStyle(fontSize: 20.0),
+              style: TextStyle(fontSize: 18.0),
             ),
             const Text(
               '12.20 pm',
-              style: TextStyle(fontSize: 20.0),
+              style: TextStyle(fontSize: 15.0),
             ),
             IconButton(
                 onPressed: upload,
@@ -104,5 +105,7 @@ class _HomePageState extends State<HomePage> {
   void upload() {}
 
   // Go to Cycle time Start page
-  void startTrip() {}
+  void startTrip() {
+    Get.to(() => Stopwatch());
+  }
 }

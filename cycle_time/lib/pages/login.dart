@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../utils/app_theme.dart';
 import 'home_page.dart';
@@ -63,9 +64,7 @@ class LoginPage extends StatelessWidget {
                           20,
                         ))),
                     onPressed: () {
-                      getData();
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => const HomePage()));
+                      Get.to(() => const HomePage());
                     },
                     child: const Text(
                       'Login',
