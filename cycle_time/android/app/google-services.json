@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "1050194246861",
+    "firebase_url": "https://insee-ab946-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "insee-ab946",
+    "storage_bucket": "insee-ab946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050194246861:android:eb7ce8846e2e173f023d84",
+        "android_client_info": {
+          "package_name": "com.example.cycle_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050194246861-a6ch018ghetaurtbigelv11j8fpv90ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD1oIkNbS8OwT0vprJ1BsPwsiuFxwkbyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050194246861-a6ch018ghetaurtbigelv11j8fpv90ps.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1050194246861-7f7khofdvtebdfnkkf521em06st8helc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.insee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050194246861:android:f64557868db7f06e023d84",
+        "android_client_info": {
+          "package_name": "com.example.insee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050194246861-a6ch018ghetaurtbigelv11j8fpv90ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD1oIkNbS8OwT0vprJ1BsPwsiuFxwkbyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050194246861-a6ch018ghetaurtbigelv11j8fpv90ps.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1050194246861-7f7khofdvtebdfnkkf521em06st8helc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.insee"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
