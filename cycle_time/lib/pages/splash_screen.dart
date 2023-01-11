@@ -1,12 +1,16 @@
+import 'package:cycle_time/pages/home_page.dart';
 import 'package:cycle_time/utils/app_theme.dart';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class SplashPage extends StatelessWidget {
+  const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    init();
+
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -22,5 +26,10 @@ class HomePage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Future<void> init() async {
+    await Future.delayed(const Duration(seconds: 4));
+    Get.to(const HomePage());
   }
 }
