@@ -76,11 +76,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-<<<<<<< Updated upstream
   // Lower widgets
   // display today cycle times
-=======
->>>>>>> Stashed changes
   lowerBody() {
     return Expanded(
       child: ListView.builder(
@@ -102,15 +99,10 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-<<<<<<< Updated upstream
   //open bottom drawer
   //Upload or Create excel sheet in selected date
   void upload() {}
 
   // Go to Cycle time Start page
-=======
-  void upload() {}
-
->>>>>>> Stashed changes
   void startTrip() {}
 }
