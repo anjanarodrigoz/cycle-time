@@ -1,4 +1,4 @@
-import 'package:cycle_time/pages/home_page.dart';
+import 'package:cycle_time/pages/login.dart';
 import 'package:cycle_time/utils/app_theme.dart';
 
 import 'package:flutter/material.dart';
@@ -29,7 +29,6 @@ class SplashPage extends StatelessWidget {
   }
 
   Future<void> init() async {
-    await Future.delayed(const Duration(seconds: 4));
-    Get.to(const HomePage());
+    Get.to(const LoginPage());
   }
 }
