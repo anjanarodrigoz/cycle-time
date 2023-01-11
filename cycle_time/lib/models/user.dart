@@ -1,3 +1,5 @@
+import 'package:cycle_time/db/db_models/db_users.dart';
+
 enum UserStatus {
   driver,
   manager,
@@ -34,9 +36,18 @@ class User {
         UserField.status: status.name
       };
 
-  User fromJson(json) => User(
+  static User fromJson(json) => User(
       id: json[UserField.id],
       name: UserField.name,
       password: UserField.password,
       status: UserStatus.values.byName(UserField.status));
+
+  DBUser toDBUser() =>
+      DBUser(id: id, name: name, password: password, status: status.name);
+
+  static User fromDBUser(user) => User(
+      id: user.id,
+      name: user.name,
+      password: user.password,
+      status: UserStatus.values.byName(user.status));
 }

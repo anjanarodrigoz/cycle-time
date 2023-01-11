@@ -63,6 +63,7 @@ class LoginPage extends StatelessWidget {
                           20,
                         ))),
                     onPressed: () {
+                      getData();
                       Navigator.push(context,
                           MaterialPageRoute(builder: (_) => const HomePage()));
                     },
@@ -79,4 +80,6 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
+
+  Future<void> getData() async {}
 }

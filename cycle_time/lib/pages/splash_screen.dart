@@ -29,7 +29,6 @@ class SplashPage extends StatelessWidget {
   }
 
   Future<void> init() async {
-    await Future.delayed(const Duration(seconds: 1));
     Get.to(const LoginPage());
   }
 }
