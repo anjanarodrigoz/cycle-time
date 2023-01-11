@@ -1,4 +1,5 @@
 import 'package:cycle_time/utils/app_theme.dart';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomePage extends StatelessWidget {
                 color: AppColor.red,
                 fontWeight: FontWeight.w600,
                 fontSize: 30.0),
-          )
+          ),
         ],
       ),
     );
