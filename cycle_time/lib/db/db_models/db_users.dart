@@ -1,5 +1,5 @@
 import 'package:hive/hive.dart';
-part 'dbuser.g.dart';
+part 'db_users.g.dart';
 
 @HiveType(typeId: 0)
 class DBUser extends HiveObject {
