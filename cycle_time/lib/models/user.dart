@@ -1,4 +1,4 @@
-import 'package:cycle_time/db/db_models/db_users.dart';
+import '../db/db_users.dart';
 
 enum UserStatus {
   driver,
