@@ -30,6 +30,6 @@ class SplashPage extends StatelessWidget {
 
   Future<void> init() async {
     await Future.delayed(const Duration(seconds: 3));
-    Get.off(const HomePage());
+    Get.off(() => const HomePage());
   }
 }

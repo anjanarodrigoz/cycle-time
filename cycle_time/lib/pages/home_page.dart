@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.only(right: 20.0),
               child: IconButton(
                 icon: const Icon(Icons.file_upload_outlined, size: 30),
-                onPressed: uploadData,
+                onPressed: cycleList.isEmpty ? null : uploadData,
               ),
             )
           ],
