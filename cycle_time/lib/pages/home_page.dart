@@ -265,24 +265,14 @@ class _HomePageState extends State<HomePage> {
       sheet
           .getRangeByIndex(rowIndex, 3)
           .setText(DateFormat('HH:mm').format(cycle.endTime));
-      sheet
-          .getRangeByIndex(rowIndex, 4)
-          .setNumber(cycle.cycle.inSeconds.toDouble());
-      sheet
-          .getRangeByIndex(rowIndex, 5)
-          .setNumber(cycle.start.inSeconds.toDouble());
-      sheet
-          .getRangeByIndex(rowIndex, 6)
-          .setNumber(cycle.loading.inSeconds.toDouble());
-      sheet
-          .getRangeByIndex(rowIndex, 7)
-          .setNumber(cycle.uphill.inSeconds.toDouble());
-      sheet
-          .getRangeByIndex(rowIndex, 8)
-          .setNumber(cycle.dumping.inSeconds.toDouble());
+      sheet.getRangeByIndex(rowIndex, 4).setText(formatDuration(cycle.cycle));
+      sheet.getRangeByIndex(rowIndex, 5).setText(formatDuration(cycle.start));
+      sheet.getRangeByIndex(rowIndex, 6).setText(formatDuration(cycle.loading));
+      sheet.getRangeByIndex(rowIndex, 7).setText(formatDuration(cycle.uphill));
+      sheet.getRangeByIndex(rowIndex, 8).setText(formatDuration(cycle.dumping));
       sheet
           .getRangeByIndex(rowIndex, 9)
-          .setNumber(cycle.downhill.inSeconds.toDouble());
+          .setText(formatDuration(cycle.downhill));
       rowIndex++;
     }
 
@@ -315,5 +305,14 @@ class _HomePageState extends State<HomePage> {
     if (selectedDate != null) {
       date.value = selectedDate;
     }
+  }
+
+  String formatDuration(Duration duration) {
+    String twodigits(int n) => n.toString().padLeft(2, '0');
+    var hour = twodigits(duration.inHours.remainder(60));
+    var min = twodigits(duration.inMinutes.remainder(60));
+    var sec = twodigits(duration.inSeconds.remainder(60));
+
+    return '$hour:$min:$sec';
   }
 }
