@@ -1,8 +1,9 @@
-import 'package:cycle_time/pages/home_page.dart';
 import 'package:cycle_time/utils/app_theme.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'home_page.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -23,6 +24,13 @@ class SplashPage extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 fontSize: 30.0),
           ),
+          const SizedBox(
+            height: 300.0,
+          ),
+          const Text(
+            'Developed by Shark Developers',
+            style: TextStyle(fontSize: 10.0),
+          )
         ],
       ),
     );
