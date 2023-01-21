@@ -309,10 +309,9 @@ class _HomePageState extends State<HomePage> {
 
   String formatDuration(Duration duration) {
     String twodigits(int n) => n.toString().padLeft(2, '0');
-    var hour = twodigits(duration.inHours.remainder(60));
     var min = twodigits(duration.inMinutes.remainder(60));
     var sec = twodigits(duration.inSeconds.remainder(60));
 
-    return '$hour:$min:$sec';
+    return '$min:$sec';
   }
 }
